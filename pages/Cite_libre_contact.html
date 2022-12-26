@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personnage d'Undertale / Contact</title>
+    <meta name="Author" content="" />
+    <link rel="stylesheet" type="text/css" href="../css/style_contact.css">
+</head>
+
+<body>
+    <div id="cont">
+        <div id="menu">
+            <ul>
+                <li><a href="../index_CiteLibre.html">Accueil</a></li>
+                <li><a href="Cite_libre_info.html">info</a></li>
+                <li><a href="Cite_libre_contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div id="text">
+            <p>Si vous désirez me contacter, je vous demanderais de remplir le formulaire joint ci-dessous.<br>
+                Aucunes informations ne sera utilisé de manière illicite.<br> (enfin j'espère.)</p>
+        </div>
+
+        <div id="formulaire">
+            <form method="post">
+                <p id="champs">Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
+                <section>
+                    <h2>Informations de contact</h2>
+
+                <p id="Pays">
+                    <label for="pay" id="pays">Dans quel pays habitez-vous ?<strong><abbr title="required">*</abbr></strong></label><br />
+                    <select name="pays" id="pay">
+                        <optgroup label="Europe">
+                            <option value="france">France</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="italie">Italie</option>
+                            <option value="royaume-uni">Royaume-Uni</option>
+                            <option value="suisse">Suisse</option>
+                            <option value="vatican">Vatican</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="autriche">Autriche</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="canada">Canada</option>
+                            <option value="etats-unis">Etats-Unis</option>                               <option value="mexique">Mexique</option>
+                        </optgroup>
+                        <optgroup label="Asie">
+                             <option value="chine">Chine</option>
+                            <option value="japon">Japon</option>
+                         </optgroup>
+                         <optgroup label="Autre">
+                            <option value="autre">Autre</option>
+                         </optgroup>
+                    </select>
+                </p>
+
+                <fieldset id="couleur">
+                    <legend>Votre couleur préféré</legend>
+                     <ul>
+                        <li>
+                            <label for="title_1">
+                                <input type="radio" id="title_1" name="title" value="red" checked>
+                                Rouge
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_2">
+                                <input type="radio" id="title_2" name="title" value="blue">
+                                Bleu
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_3">
+                                <input type="radio" id="title_3" name="title" value="green">
+                                Vert
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_4">
+                                <input type="radio" id="title_4" name="title" value="yellow">
+                                Jaune
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_5">
+                                <input type="radio" id="title_5" name="title" value="black">
+                                Noir
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_6">
+                                <input type="radio" id="title_6" name="title" value="white">
+                                Blanc
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset id="sexe">
+                    <legend>Genre</legend>
+                    <p>
+                        <select id="Monde" name="genre" required>
+                            <option value="homme">Je suis un homme</option>
+                            <option value="femme">Je suis une femme</option>
+                            <option value="assexué">Je suis assexué</option>
+                        </select>
+                    </p>
+                </fieldset>
+                    <p id="âge">
+                        <label for="age">
+                            <span>Votre âge :</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input id="age" name="age" type="number" required min="5" placeholder="5">
+                    </p>
+                    <p id="nom">
+                        <label for="name">
+                            <span>Nom :</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="text" id="name" name="username" required autocomplete="off">
+                    </p>
+                    <p id="e-mail">
+                        <label for="mail">
+                            <span>e-mail :</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="email" id="mail" name="usermail" required placeholder="example@hotmail.com" autocomplete="off">
+                    </p>
+                    <p id="mdp">
+                        <label for="password">
+                            <span>Mot de passe :</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="password" id="pwd" name="password" required maxlength="25" minlength="8" accept="text/plain">
+                    </p>
+                    <p id="message">
+                        <label for="ameliorer"><span Id="com">
+                                Votre commentaire <strong><abbr title="required">*</abbr></strong></span>
+                        </label>
+                        <br />
+                        <textarea name="commentaire" id="commentaire" required maxlength="270" minlength="5"></textarea>
+                    </p>
+
+                    <section id="butt">
+                        <p id="sub"> <button type="submit">Valider les informations</button> </p>
+                    </section>
+
+                </section>
+            </form>
+        </div>
+    </div>
+
+
+</body></html>

@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 105%;
+    text-align: justify;
+}
+
+/*title*/
+
+a {
+    cursor: url('../images/blueHeart.png'), pointer;
+}
+
+a:hover,
+a:focus {
+    background: rgba(35, 35, 35, .4);
+}
+
+a span {
+    /*
+    bottom: -40px;
+    right: 37px;
+    */
+    font-size: 16px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -85px;
+    color: #a9d2fc;
+    background: rgba(0, 0, 0, .9);
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    transform: scale(0) rotate(-12deg);
+    transition: all .25;
+    opacity: 0;
+}
+
+a:hover span,
+a:focus span {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+/*reste*/
+
+body {
+    background-color: black;
+}
+
+#cont {
+    background-color: #111111;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(4em, auto);
+    margin: 2%;
+    cursor: url('../images/heart.png'), pointer;
+}
+
+/*version smartphone*/
+
+/*menu*/
+
+#menu {
+    background-color: rgba(51, 51, 51, 0.9);
+    padding-right: 7%;
+    padding-left: 7%;
+    position: fixed;
+    width: 96%;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: flex;
+    align-content: space-between;
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-bottom: 2%;
+}
+
+#menu ul li a {
+    color: white;
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1em;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#menu ul li a:hover {
+    color: #888888;
+    background-color: black;
+}
+
+/*image*/
+
+#img{
+    grid-column: 1/4;
+    grid-row: 4/7; 
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    background-image: url(../images/Snowdin.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img2 {
+    grid-column: 1/4;
+    grid-row: 12/15;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(../images/PapyrusHouse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 {
+    grid-column: 1/4;
+    grid-row: 20/23;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(../images/Ruins.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img4 {
+    grid-column: 1/4;
+    grid-row: 28/31;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(../images/Last_Corridor.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img5{
+    grid-column: 1/4;
+    grid-row: 36/39;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(../images/neige.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+#gaster{
+    width: 30%;
+    height: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    opacity: 0.07;
+}
+
+
+
+
+/*
+#img {
+    grid-column: 1/4;
+    grid-row: 4/7;
+    background-color: #222222;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(../images/sans.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+
+
+
+/*texte*/
+
+#text {
+    grid-column: 1/4;
+    grid-row: 16/19;
+    background-color: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10%;
+}
+
+#text p {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#text p a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#text p a:hover {
+    color: red;
+}
+
+#text2 {
+    grid-column: 1/4;
+    grid-row: 8/11;
+    background-color: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    padding: 10%;
+}
+
+#text2 p {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#text2 p a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#text2 p a:hover {
+    color: red;
+}
+
+#text5 {
+    grid-column: 1/4;
+    grid-row: 24/27;
+    background-color: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10%;
+}
+
+#text5 p {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#text5 p a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#text5 p a:hover {
+    color: red;
+}
+
+#text6 {
+    grid-column: 1/4;
+    grid-row: 32/35;
+    background-color: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    padding: 10%;
+}
+
+#text6 p {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#text6 p a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#text6 p a:hover {
+    color: red;
+}
+
+#text7 {
+    grid-column: 1/4;
+    grid-row: 40/43;
+    background-color: #232323;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    padding: 10%;
+}
+
+#text7 p {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#text7 p a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#text7 p a:hover {
+    color: red;
+}
+
+/*logo*/
+
+#undertale {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-color: #000000;
+    background-image: url(../images/undertale.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*bannière*/
+
+#baniere {
+    grid-column: 1/4;
+    grid-row: 45/46;
+    margin: 1%;
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+/*version tablette*/
+
+@media only screen and (min-width: 600px) {
+
+    /*bannière*/
+
+    #baniere {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+
+    #img {
+        grid-column: 1/2;
+        grid-row: 4/7;
+    }
+
+    #img2 {
+        grid-column: 1/2;
+        grid-row: 8/11;
+    }
+
+    #img3 {
+        grid-column: 1/2;
+        grid-row: 12/15;
+        width: 90%;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    #img4 {
+        grid-column: 1/2;
+        grid-row: 16/19;
+        width: 90%;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    
+    #img5 {
+        grid-column: 1/2;
+        grid-row: 20/23;
+        width: 90%;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    /*texte*/
+
+    #text {
+        grid-column: 2/4;
+        grid-row: 8/11;
+    }
+
+    #text2 {
+        grid-column: 2/4;
+        grid-row: 4/7;
+    }
+
+    #text5 {
+        grid-column: 2/4;
+        grid-row: 12/15;
+    }
+
+    #text6 {
+        grid-column: 2/4;
+        grid-row: 16/19;
+    }
+    
+    #text7 {
+        grid-column: 2/4;
+        grid-row: 20/23;
+    }
+
+    /*logo*/
+
+    #undertale {
+        grid-column: 1/4;
+        grid-row: 24/26;
+    }
+}
+
+/*version ordinateur*/
+
+@media only screen and (min-width: 960px) {
+    #cont {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #baniere {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+
+    #img {
+        grid-column: 1/2;
+        grid-row: 6/9;
+        margin-top: 0%;
+    }
+
+    #img2 {
+        grid-column: 3/4;
+        grid-row: 6/9;
+    }
+
+    #img3 {
+        grid-column: 1/2;
+        grid-row: 10/13;
+    }
+
+    #img4 {
+        grid-column: 3/4;
+        grid-row: 10/13;
+        margin-bottom: 0%;
+    }
+    
+    #img5 {
+        grid-column: 1/2;
+        grid-row: 14/17;
+        margin-bottom: 0%;
+    }
+
+    /*texte*/
+
+    #text {
+        grid-column: 4/5;
+        grid-row: 6/9;
+        margin-left: 2%;
+    }
+
+    #text2 {
+        grid-column: 2/3;
+        grid-row: 6/9;
+        margin-top: 0%;
+        margin-left: 2%;
+    }
+    
+    #text5 {
+        grid-column: 2/3;
+        grid-row: 10/13;
+        margin-left: 2%;
+    }
+
+    #text6 {
+        grid-column: 4/5;
+        grid-row: 10/13;
+        margin-left: 2%;
+    }
+    
+    #text7 {
+        grid-column: 2/3;
+        grid-row: 14/17;
+        margin-left: 2%;
+    }
+
+    /*logo*/
+
+    #undertale {
+        grid-column: 1/6;
+        grid-row: 2/4;
+    }
+
+}
